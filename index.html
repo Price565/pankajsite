@@ -30,7 +30,11 @@ body{
     padding:12px 12px 20px;
 }
 
-/* TOP / BOTTOM BUTTON */
+
+/* =========================
+   TOP / BOTTOM BUTTON
+========================= */
+
 .tp-button-wrap{
     padding:4px;
     background:#f1f8fc;
@@ -64,13 +68,25 @@ body{
     font-weight:800;
 
     box-shadow:0 5px 15px rgba(8,120,189,.20);
+
+    transition:
+        transform .15s ease,
+        box-shadow .15s ease;
+}
+
+.tp-button:hover{
+    box-shadow:0 7px 20px rgba(8,120,189,.30);
 }
 
 .tp-button:active{
     transform:scale(.98);
 }
 
-/* PROFILE */
+
+/* =========================
+   PROFILE
+========================= */
+
 .tp-profile{
     text-align:center;
     padding:16px 5px 2px;
@@ -93,7 +109,11 @@ body{
     box-shadow:0 5px 18px rgba(0,0,0,.18);
 }
 
-/* TITLE */
+
+/* =========================
+   TITLE
+========================= */
+
 .tp-title{
     font-size:24px;
     line-height:1.15;
@@ -105,7 +125,11 @@ body{
     text-transform:uppercase;
 }
 
-/* FEATURES */
+
+/* =========================
+   FEATURES
+========================= */
+
 .tp-features{
     margin-top:13px;
 }
@@ -148,7 +172,11 @@ body{
     font-weight:650;
 }
 
-/* JOIN TEXT */
+
+/* =========================
+   JOIN TEXT
+========================= */
+
 .tp-join{
     text-align:center;
 
@@ -161,7 +189,11 @@ body{
     font-weight:900;
 }
 
-/* DISCLAIMER */
+
+/* =========================
+   DISCLAIMER
+========================= */
+
 .tp-disclaimer{
     text-align:center;
 
@@ -178,40 +210,101 @@ body{
     color:#16804e;
 }
 
-/* ADBUILDAGENCY */
-.tp-agency{
+
+/* =========================
+   ADBUILDAGENCY FOOTER
+========================= */
+
+.ads{
+    width:100%;
+
     margin-top:27px;
 
-    padding:10px 7px;
+    padding:13px 14px;
 
-    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+    border-radius:14px;
 
     background:linear-gradient(
-        100deg,
-        #5540df,
-        #e72d91
+        135deg,
+        #5140df 0%,
+        #7b35c9 45%,
+        #e72d91 100%
     );
+
+    color:#fff;
 
     text-align:center;
 
-    box-shadow:0 7px 18px rgba(80,50,180,.18);
+    font-size:13px;
+
+    line-height:1.3;
+
+    font-weight:700;
+
+    box-shadow:
+        0 7px 20px rgba(80,50,180,.20);
+
+    overflow:hidden;
 }
 
-.tp-agency-text{
+.ads-powered{
     color:#fff;
 
-    font-size:12px;
-
-    font-weight:800;
+    white-space:nowrap;
 }
 
-.tp-agency-name{
-    color:#63c8ff;
+.ads-link{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:4px 9px;
+
+    color:#63d0ff !important;
+
+    text-decoration:none !important;
+
+    font-size:14px;
+
     font-weight:900;
+
+    letter-spacing:.3px;
+
+    white-space:nowrap;
+
+    text-shadow:
+        0 1px 5px rgba(0,0,0,.18);
+
+    transition:
+        color .15s ease,
+        transform .15s ease;
+}
+
+.ads-link:hover{
+    color:#fff !important;
+
+    transform:translateY(-1px);
+}
+
+.ads-arrow{
+    white-space:nowrap;
 }
 
 
-/* SMALL MOBILE */
+/* =========================
+   SMALL MOBILE
+========================= */
+
 @media(max-width:360px){
 
     .tp-container{
@@ -220,6 +313,7 @@ body{
 
     .tp-button{
         min-height:46px;
+
         font-size:12px;
     }
 
@@ -239,7 +333,9 @@ body{
     .tp-check{
         width:31px;
         height:31px;
+
         flex-basis:31px;
+
         font-size:17px;
     }
 
@@ -250,9 +346,32 @@ body{
     .tp-join{
         font-size:18px;
     }
+
+    .ads{
+        margin-top:22px;
+
+        padding:11px 8px;
+
+        gap:5px;
+
+        border-radius:12px;
+
+        font-size:11px;
+    }
+
+    .ads-link{
+        font-size:12px;
+
+        padding:3px 5px;
+    }
+
+    .ads-arrow{
+        font-size:11px;
+    }
 }
 </style>
 </head>
+
 
 <body>
 
@@ -262,59 +381,59 @@ body{
 
 
 <!-- ==================================================
-     🔴 ADDBUILDAGENCY TELEGRAM LINK
+     TELEGRAM LINK
      
-     👉 SIRF YAHAN APNA TELEGRAM LINK DALO
+     SIRF YAHAN APNA TELEGRAM LINK DALO.
      
-     Example:
-     https://t.me/yourchannel
-     
-     Dono JOIN buttons isi link ko automatically use
-     karenge.
+     Dono JOIN buttons aur footer isi link
+     ko automatically use karenge.
 ================================================== -->
 
 <script>
-
 const ADDBUILDAGENCY_TELEGRAM_LINK =
 "https://t.me/+3XoqJNLxYHswNTc1";
-
 </script>
 
 
-<!-- TOP BUTTON -->
+<!-- =========================
+     TOP JOIN BUTTON
+========================= -->
 
 <div class="tp-button-wrap">
 
 <a
-href="https://t.me/+re5BE7zKoNk4NmQ1"
-class="tp-button tp-telegram-btn">
+    href="#"
+    class="tp-button tp-telegram-btn">
 
-JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
+    JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
 
 </a>
 
 </div>
 
 
-<!-- PROFILE -->
+<!-- =========================
+     PROFILE
+========================= -->
 
 <div class="tp-profile">
 
-<!-- 🔴 APNA LOGO URL YAHAN DALO -->
-
 <img
-src="https://cdn5.telesco.pe/file/iI8HXaTzdxMH6o2mayRSrI7V1zJjYNV4qyvKD4XpvsxT-_nzvZ8QdhcGjkDOtZH0UHo3dS5qiHmJIL8HTn5dD9MnKaZ02bnTvFxo6DPZ3X-9Q6QdmNre4wDWr3JMj7kaseljKRulHa7IkcqWWnPtzUFIkXJ9JsTtA47Zc1i6l4ydV77RHv43P39uR3q_fvRvJsPGU2VGJTgbwvo03iIrQw2QrH6gRzX4P1r5lmL3BvusGsUAKH8fORXE5UpGohR21JTvvL4sOvU4utmGvHeiCJM-XbvK9gcWqaY-6JCMy2c1mg4gLYHKAuRAPZzYR6iGpb1FgJ6m0chqgrJ-R2SR9A.jpg"
-alt="Trader Purab Forex"
-class="tp-logo">
+    src="https://cdn5.telesco.pe/file/iI8HXaTzdxMH6o2mayRSrI7V1zJjYNV4qyvKD4XpvsxT-_nzvZ8QdhcGjkDOtZH0UHo3dS5qiHmJIL8HTn5dD9MnKaZ02bnTvFxo6DPZ3X-9Q6QdmNre4wDWr3JMj7kaseljKRulHa7IkcqWWnPtzUFIkXJ9JsTtA47Zc1i6l4ydV77RHv43P39uR3q_fvRvJsPGU2VGJTgbwvo03iIrQw2QrH6gRzX4P1r5lmL3BvusGsUAKH8fORXE5UpGohR21JTvvL4sOvU4utmGvHeiCJM-XbvK9gcWqaY-6JCMy2c1mg4gLYHKAuRAPZzYR6iGpb1FgJ6m0chqgrJ-R2SR9A.jpg"
+    alt="Trader Purab Forex"
+    class="tp-logo"
+>
 
 <h1 class="tp-title">
-PANKAJ BHARDWAJ OFFICIAL
+    PANKAJ BHARDWAJ OFFICIAL
 </h1>
 
 </div>
 
 
-<!-- FEATURES -->
+<!-- =========================
+     FEATURES
+========================= -->
 
 <div class="tp-features">
 
@@ -322,11 +441,11 @@ PANKAJ BHARDWAJ OFFICIAL
 <div class="tp-feature">
 
 <div class="tp-check">
-✓
+    ✓
 </div>
 
 <div class="tp-feature-text">
-Nifty, BankNifty &amp; Options market insights
+    Nifty, BankNifty &amp; Options market insights
 </div>
 
 </div>
@@ -335,11 +454,11 @@ Nifty, BankNifty &amp; Options market insights
 <div class="tp-feature">
 
 <div class="tp-check">
-✓
+    ✓
 </div>
 
 <div class="tp-feature-text">
-Risk management &amp; educational trading knowledge
+    Risk management &amp; educational trading knowledge
 </div>
 
 </div>
@@ -348,11 +467,11 @@ Risk management &amp; educational trading knowledge
 <div class="tp-feature">
 
 <div class="tp-check">
-✓
+    ✓
 </div>
 
 <div class="tp-feature-text">
-Daily market updates &amp; useful trading information
+    Daily market updates &amp; useful trading information
 </div>
 
 </div>
@@ -361,33 +480,40 @@ Daily market updates &amp; useful trading information
 </div>
 
 
-<!-- JOIN TEXT -->
+<!-- =========================
+     JOIN TEXT
+========================= -->
 
 <div class="tp-join">
-Join Today For FREE! 🚀
+    Join Today For FREE! 🚀
 </div>
 
 
-<!-- BOTTOM BUTTON -->
+<!-- =========================
+     BOTTOM JOIN BUTTON
+========================= -->
 
 <div class="tp-button-wrap">
 
 <a
-href="https://t.me/+re5BE7zKoNk4NmQ1"
-class="tp-button tp-telegram-btn">
+    href="#"
+    class="tp-button tp-telegram-btn">
 
-JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
+    JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
 
 </a>
 
 </div>
 
 
-<!-- DISCLAIMER -->
+<!-- =========================
+     DISCLAIMER
+========================= -->
 
 <div class="tp-disclaimer">
 
 <strong>Disclaimer:</strong>
+
 Educational content only. No guaranteed returns or
 personalized investment advice. Trading involves
 market risks. Please do your own research before
@@ -396,22 +522,27 @@ making any financial decision.
 </div>
 
 
-<!-- ADDBUILDAGENCY -->
+<!-- =========================
+     FOOTER
+========================= -->
 
-<div class="tp-agency">
+<div class="ads">
 
-<div class="tp-agency-text">
+    <span class="ads-powered">
+        🔥 Powered by
+    </span>
 
-🔥 Ads by
-<span class="tp-agency-name">
-ADBUILDAGENCY
-</span>
+    <a
+        href="#"
+        class="ads-link ads-telegram-link">
 
-&nbsp;•&nbsp;
+        ADBUILDAGENCY
 
-Boost Your Reach 🚀
+    </a>
 
-</div>
+    <span class="ads-arrow">
+        🚀
+    </span>
 
 </div>
 
@@ -426,13 +557,14 @@ Boost Your Reach 🚀
 
 <script>
 
-/* Automatically puts the Telegram link
-   on BOTH buttons */
+/* =========================
+   TELEGRAM LINKS
+========================= */
 
 document.querySelectorAll(".tp-telegram-btn")
 .forEach(function(button){
 
-    button.href = https://t.me/+3XoqJNLxYHswNTc1;
+    button.href = ADDBUILDAGENCY_TELEGRAM_LINK;
 
     button.addEventListener("click",function(){
 
@@ -449,7 +581,98 @@ document.querySelectorAll(".tp-telegram-btn")
 
 });
 
+
+/* Footer Telegram Link */
+
+document.querySelectorAll(".ads-telegram-link")
+.forEach(function(link){
+
+    link.href = ADDBUILDAGENCY_TELEGRAM_LINK;
+
+    link.addEventListener("click",function(){
+
+        if(typeof fbq === "function"){
+
+            fbq(
+                "track",
+                "Lead"
+            );
+
+        }
+
+    });
+
+});
+
 </script>
+
+
+<!-- ==================================================
+     META PIXEL
+================================================== -->
+
+<script>
+
+!function(f,b,e,v,n,t,s)
+{
+    if(f.fbq)return;
+
+    n=f.fbq=function(){
+
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+
+    };
+
+    if(!f._fbq)f._fbq=n;
+
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+
+    t=b.createElement(e);
+    t.async=!0;
+
+    t.src=v;
+
+    s=b.getElementsByTagName(e)[0];
+
+    s.parentNode.insertBefore(t,s)
+
+}
+(
+    window,
+    document,
+    'script',
+    'https://connect.facebook.net/en_US/fbevents.js'
+);
+
+fbq(
+    'init',
+    '2309298496491206'
+);
+
+fbq(
+    'track',
+    'PageView'
+);
+
+</script>
+
+
+<noscript>
+
+<img
+    height="1"
+    width="1"
+    style="display:none"
+    src="https://www.facebook.com/tr?id=2309298496491206&ev=PageView&noscript=1"
+/>
+
+</noscript>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -467,5 +690,6 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2309298496491206&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
 </body>
 </html>
