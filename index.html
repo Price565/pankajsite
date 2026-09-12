@@ -1,1132 +1,159 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<title>Join Telegram | Premium Signals</title>
 
-<title>Trader Purab Forex | Free Telegram Channel</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-
-/* ==================================================
-   RESET
-================================================== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-html{
-    width:100%;
-    min-height:100%;
+    font-family:'Poppins', sans-serif;
 }
 
 body{
-    width:100%;
-    min-height:100vh;
-
-    background:#ffffff;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-}
-
-
-/* ==================================================
-   PAGE
-================================================== */
-
-.tp-page{
-    width:100%;
-    min-height:100vh;
-
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
     display:flex;
     justify-content:center;
-
-    padding:20px 12px;
+    align-items:center;
+    height:100vh;
 }
 
-
-/* ==================================================
-   MAIN CONTAINER
-================================================== */
-
-.tp-container{
-    width:100%;
-    max-width:620px;
-
-    margin:0 auto;
-
-    padding:14px 20px 22px;
-
-    background:#ffffff;
-
+.container{
+    width:90%;
+    max-width:380px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
     border-radius:20px;
-
-    box-shadow:
-        0 8px 35px rgba(0,0,0,.07);
-}
-
-
-/* ==================================================
-   TELEGRAM BUTTON
-================================================== */
-
-.tp-button-wrap{
-    width:100%;
-
-    padding:4px;
-
-    background:#f1f8fc;
-
-    border-radius:50px;
-}
-
-
-.tp-button{
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    width:100%;
-
-    min-height:50px;
-
-    padding:10px 15px;
-
-    border-radius:40px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #0879bd,
-            #0865a5
-        );
-
-    color:#ffffff !important;
-
-    text-decoration:none !important;
-
+    padding:25px;
     text-align:center;
-
-    font-size:14px;
-
-    font-weight:800;
-
-    box-shadow:
-        0 5px 15px rgba(8,120,189,.20);
-
-    transition:
-        .2s ease;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
 
-
-.tp-button:hover{
-
-    transform:translateY(-1px);
-
-    box-shadow:
-        0 8px 22px rgba(8,120,189,.28);
-}
-
-
-.tp-button:active{
-
-    transform:scale(.98);
-}
-
-
-/* ==================================================
-   PROFILE
-================================================== */
-
-.tp-profile{
-
-    text-align:center;
-
-    padding:
-        22px
-        5px
-        4px;
-}
-
-
-.tp-logo{
-
-    width:112px;
-    height:112px;
-
-    display:block;
-
-    margin:
-        0 auto
-        11px;
-
-    object-fit:cover;
-
+.profile{
+    width:80px;
+    height:80px;
     border-radius:50%;
-
-    border:
-        4px solid #ffffff;
-
-    box-shadow:
-        0 6px 20px rgba(0,0,0,.18);
+    border:3px solid #38bdf8;
+    margin-bottom:15px;
 }
 
-
-/* ==================================================
-   TITLE
-================================================== */
-
-.tp-title{
-
-    font-size:29px;
-
-    line-height:1.15;
-
-    font-weight:900;
-
-    color:#18a957;
-
-    text-transform:uppercase;
-
-    letter-spacing:.1px;
-}
-
-
-/* ==================================================
-   FEATURES
-================================================== */
-
-.tp-features{
-
-    margin-top:17px;
-
-    padding:0 5px;
-}
-
-
-.tp-feature{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:11px;
-
-    margin:10px 0;
-}
-
-
-.tp-check{
-
-    width:36px;
-    height:36px;
-
-    flex:
-        0 0 36px;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:#effaf3;
-
-    color:#18ad58;
-
-    font-size:20px;
-
-    font-weight:900;
-}
-
-
-.tp-feature-text{
-
-    font-size:14.5px;
-
-    line-height:1.35;
-
-    color:#222222;
-
-    font-weight:650;
-}
-
-
-/* ==================================================
-   JOIN TEXT
-================================================== */
-
-.tp-join{
-
-    text-align:center;
-
-    margin:
-        19px
-        0
-        11px;
-
-    color:#0876b8;
-
-    font-size:20px;
-
-    font-weight:900;
-}
-
-
-/* ==================================================
-   DISCLAIMER
-================================================== */
-
-.tp-disclaimer{
-
-    text-align:center;
-
-    margin:
-        15px
-        4px
-        0;
-
-    font-size:11px;
-
-    line-height:1.5;
-
-    color:#777777;
-}
-
-
-.tp-disclaimer strong{
-
-    color:#16804e;
-}
-
-
-/* ==================================================
-   SMALL ADBUILDAGENCY FOOTER
-================================================== */
-
-.ads{
-
-    width:100%;
-
-    margin-top:22px;
-
-    padding:
-        8px
-        10px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:5px;
-
-    border-radius:9px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #5140df,
-            #e72d91
-        );
-
-    color:#ffffff;
-
-    text-align:center;
-
-    font-size:10px;
-
-    line-height:1.2;
-
-    font-weight:600;
-
-    box-shadow:
-        0 4px 12px rgba(80,50,180,.14);
-}
-
-
-.ads-powered{
-
-    color:#ffffff;
-
-    white-space:nowrap;
-}
-
-
-.ads-link{
-
-    color:#63d0ff !important;
-
-    text-decoration:none !important;
-
-    font-size:10px;
-
+h1{
+    font-size:22px;
     font-weight:700;
-
-    letter-spacing:.1px;
-
-    white-space:nowrap;
+    margin-bottom:15px;
 }
 
-
-.ads-link:hover{
-
-    color:#ffffff !important;
+/* BUTTON */
+a.btn{
+    display:block;
+    width:100%;
+    padding:14px;
+    margin:15px 0;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    background:linear-gradient(135deg,#38bdf8,#4ade80);
+    color:#000;
+    transition:0.3s;
 }
 
-
-/* ==================================================
-   DESKTOP / LAPTOP
-================================================== */
-
-@media(min-width:768px){
-
-    .tp-page{
-
-        padding:
-            35px
-            20px;
-    }
-
-
-    .tp-container{
-
-        max-width:650px;
-
-        padding:
-            18px
-            30px
-            25px;
-
-        border-radius:23px;
-
-        box-shadow:
-            0 12px 40px rgba(0,0,0,.08);
-    }
-
-
-    .tp-button{
-
-        min-height:53px;
-
-        font-size:14px;
-    }
-
-
-    .tp-profile{
-
-        padding-top:27px;
-    }
-
-
-    .tp-logo{
-
-        width:125px;
-        height:125px;
-
-        margin-bottom:13px;
-    }
-
-
-    .tp-title{
-
-        font-size:31px;
-    }
-
-
-    .tp-features{
-
-        margin-top:20px;
-
-        padding:
-            0
-            8px;
-    }
-
-
-    .tp-feature{
-
-        gap:13px;
-
-        margin:12px 0;
-    }
-
-
-    .tp-check{
-
-        width:38px;
-        height:38px;
-
-        flex-basis:38px;
-
-        font-size:21px;
-    }
-
-
-    .tp-feature-text{
-
-        font-size:15px;
-    }
-
-
-    .tp-join{
-
-        margin-top:22px;
-
-        font-size:21px;
-    }
-
-
-    .tp-disclaimer{
-
-        font-size:11.5px;
-
-        max-width:570px;
-
-        margin-left:auto;
-
-        margin-right:auto;
-    }
-
-
-    .ads{
-
-        margin-top:24px;
-
-        padding:
-            9px
-            12px;
-
-        font-size:10px;
-    }
-
-
-    .ads-link{
-
-        font-size:10px;
-    }
-
+a.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px #4ade80;
 }
 
-
-/* ==================================================
-   LARGE DESKTOP
-================================================== */
-
-@media(min-width:1100px){
-
-    .tp-container{
-
-        max-width:670px;
-    }
-
-
-    .tp-title{
-
-        font-size:33px;
-    }
-
-
-    .tp-feature-text{
-
-        font-size:15.5px;
-    }
-
+/* POINTS */
+.points{
+    text-align:left;
+    margin-top:10px;
+    font-size:14px;
+    line-height:1.8;
 }
 
-
-/* ==================================================
-   MOBILE
-================================================== */
-
-@media(max-width:767px){
-
-    .tp-page{
-
-        padding:
-            9px
-            7px;
-    }
-
-
-    .tp-container{
-
-        max-width:520px;
-
-        padding:
-            10px
-            11px
-            17px;
-
-        border-radius:17px;
-    }
-
-
-    .tp-button{
-
-        min-height:47px;
-
-        font-size:12.5px;
-
-        padding:10px;
-    }
-
-
-    .tp-profile{
-
-        padding:
-            17px
-            4px
-            3px;
-    }
-
-
-    .tp-logo{
-
-        width:96px;
-        height:96px;
-
-        border-width:4px;
-
-        margin-bottom:9px;
-    }
-
-
-    .tp-title{
-
-        font-size:23px;
-    }
-
-
-    .tp-features{
-
-        margin-top:13px;
-
-        padding:0;
-    }
-
-
-    .tp-feature{
-
-        gap:9px;
-
-        margin:8px 0;
-    }
-
-
-    .tp-check{
-
-        width:33px;
-        height:33px;
-
-        flex-basis:33px;
-
-        font-size:18px;
-    }
-
-
-    .tp-feature-text{
-
-        font-size:13.5px;
-    }
-
-
-    .tp-join{
-
-        margin:
-            16px
-            0
-            10px;
-
-        font-size:18px;
-    }
-
-
-    .tp-disclaimer{
-
-        margin-top:14px;
-
-        font-size:10.5px;
-
-        line-height:1.45;
-    }
-
-
-    .ads{
-
-        margin-top:19px;
-
-        padding:
-            8px
-            7px;
-
-        gap:4px;
-
-        border-radius:8px;
-
-        font-size:9px;
-    }
-
-
-    .ads-link{
-
-        font-size:9px;
-    }
-
+.points span{
+    display:block;
 }
 
+/* FOOTER */
+.footer{
+    margin-top:15px;
+    font-size:11px;
+    opacity:0.7;
+}
 
-/* ==================================================
-   VERY SMALL MOBILE
-================================================== */
+/* ADS */
+.ads{
+    margin-top:15px;
+    font-size:12px;
+    padding:8px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#4f46e5,#9333ea,#ec4899);
+    box-shadow:0 0 10px rgba(236,72,153,0.5);
+    animation: glow 2s infinite alternate;
+}
 
-@media(max-width:360px){
+.ads a{
+    color:#6cb6ff;
+    text-decoration:none;
+    font-weight:700;
+    margin:0 4px;
+}
 
-    .tp-page{
-
-        padding:
-            7px
-            6px;
-    }
-
-
-    .tp-container{
-
-        padding:
-            9px
-            9px
-            15px;
-    }
-
-
-    .tp-button{
-
-        min-height:45px;
-
-        font-size:11.5px;
-    }
-
-
-    .tp-logo{
-
-        width:88px;
-        height:88px;
-    }
-
-
-    .tp-title{
-
-        font-size:21px;
-    }
-
-
-    .tp-feature{
-
-        margin:7px 0;
-    }
-
-
-    .tp-check{
-
-        width:30px;
-        height:30px;
-
-        flex-basis:30px;
-
-        font-size:16px;
-    }
-
-
-    .tp-feature-text{
-
-        font-size:12.5px;
-    }
-
-
-    .tp-join{
-
-        font-size:17px;
-    }
-
-
-    .ads{
-
-        margin-top:17px;
-
-        padding:
-            7px
-            6px;
-
-        font-size:8.5px;
-
-        gap:3px;
-    }
-
-
-    .ads-link{
-
-        font-size:8.5px;
-    }
-
+/* ANIMATION */
+@keyframes glow {
+    from { box-shadow:0 0 8px #9333ea; }
+    to   { box-shadow:0 0 14px #ec4899; }
 }
 
 </style>
+
 </head>
-
-
 <body>
 
+<div class="container">
 
-<div class="tp-page">
+    <img src="https://i.ibb.co/kNhm2WH/cropped-circle-image-3.png" class="profile">
 
+    <h1>PANKAJ BHARDWAJ</h1>
 
-<div class="tp-container">
+    <!-- BUTTON 1 -->
+    <a href="https://t.me/+re5BE7zKoNk4NmQ1" class="btn">
+        JOIN FREE TELEGRAM CHANNEL
+    </a>
 
+    <div class="points">
+        <span>📊 NIFTY • BANKNIFTY • SENSEX</span>
+        <span>✅ Daily Calls Available</span>
+        <span>⭐ High Accuracy Strategy</span>
+        <span>🎯 Expert Analysis</span>
+    </div>
 
-<!-- ==================================================
-     TELEGRAM LINK
-================================================== -->
+    <!-- BUTTON 2 -->
+    <a href="https://t.me/+re5BE7zKoNk4NmQ1" class="btn">
+        JOIN FREE TELEGRAM CHANNEL
+    </a>
 
-<script>
+    <div class="footer">
+        Disclaimer: This is for educational purposes only. We are not SEBI registered.
+    </div>
 
-const ADDBUILDAGENCY_TELEGRAM_LINK =
-"https://t.me/+3XoqJNLxYHswNTc1";
-
-</script>
-
-
-<!-- ==================================================
-     TOP JOIN BUTTON
-================================================== -->
-
-<div class="tp-button-wrap">
-
-<a
-    href="https://t.me/+re5BE7zKoNk4NmQ1"
-    class="tp-button tp-telegram-btn">
-
-    JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
-
-</a>
-
+    <!-- ADS AGENCY -->
+    <div class="ads">
+        🔥 Ads by 
+        <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">ADSAGENCY</a>
+        • Instant Growth 🚀
+    </div>
 </div>
-
-
-<!-- ==================================================
-     PROFILE
-================================================== -->
-
-<div class="tp-profile">
-
-
-<img
-    src="https://cdn5.telesco.pe/file/iI8HXaTzdxMH6o2mayRSrI7V1zJjYNV4qyvKD4XpvsxT-_nzvZ8QdhcGjkDOtZH0UHo3dS5qiHmJIL8HTn5dD9MnKaZ02bnTvFxo6DPZ3X-9Q6QdmNre4wDWr3JMj7kaseljKRulHa7IkcqWWnPtzUFIkXJ9JsTtA47Zc1i6l4ydV77RHv43P39uR3q_fvRvJsPGU2VGJTgbwvo03iIrQw2QrH6gRzX4P1r5lmL3BvusGsUAKH8fORXE5UpGohR21JTvvL4sOvU4utmGvHeiCJM-XbvK9gcWqaY-6JCMy2c1mg4gLYHKAuRAPZzYR6iGpb1FgJ6m0chqgrJ-R2SR9A.jpg"
-    alt="Trader Purab Forex"
-    class="tp-logo"
->
-
-
-<h1 class="tp-title">
-
-    PANKAJ BHARDWAJ OFFICIAL
-
-</h1>
-
-
-</div>
-
-
-<!-- ==================================================
-     FEATURES
-================================================== -->
-
-<div class="tp-features">
-
-
-<div class="tp-feature">
-
-<div class="tp-check">
-    ✓
-</div>
-
-<div class="tp-feature-text">
-
-    Nifty, BankNifty &amp; Options market insights
-
-</div>
-
-</div>
-
-
-<div class="tp-feature">
-
-<div class="tp-check">
-    ✓
-</div>
-
-<div class="tp-feature-text">
-
-    Risk management &amp; educational trading knowledge
-
-</div>
-
-</div>
-
-
-<div class="tp-feature">
-
-<div class="tp-check">
-    ✓
-</div>
-
-<div class="tp-feature-text">
-
-    Daily market updates &amp; useful trading information
-
-</div>
-
-</div>
-
-
-</div>
-
-
-<!-- ==================================================
-     JOIN TEXT
-================================================== -->
-
-<div class="tp-join">
-
-    Join Today For FREE! 🚀
-
-</div>
-
-
-<!-- ==================================================
-     BOTTOM JOIN BUTTON
-================================================== -->
-
-<div class="tp-button-wrap">
-
-<a
-    href="https://t.me/+re5BE7zKoNk4NmQ1"
-    class="tp-button tp-telegram-btn">
-
-    JOIN NOW FOR FREE TELEGRAM CHANNEL 🚀
-
-</a>
-
-</div>
-
-
-<!-- ==================================================
-     DISCLAIMER
-================================================== -->
-
-<div class="tp-disclaimer">
-
-<strong>Disclaimer:</strong>
-
-Educational content only. No guaranteed returns or
-personalized investment advice. Trading involves
-market risks. Please do your own research before
-making any financial decision.
-
-</div>
-
-
-<!-- ==================================================
-     SMALL ADBUILDAGENCY FOOTER
-================================================== -->
-
-<div class="ads">
-
-<span class="ads-powered">
-    🔥 Powered by
-</span>
-
-
-<a
-    href="#"
-    class="ads-link ads-telegram-link">
-
-    ADBUILDAGENCY
-
-</a>
-
-</div>
-
-
-</div>
-
-</div>
-
-
-<!-- ==================================================
-     TELEGRAM LINK SCRIPT
-================================================== -->
-
-<script>
-
-
-/* =========================
-   JOIN BUTTONS
-========================= */
-
-document
-.querySelectorAll(".tp-telegram-btn")
-.forEach(function(button){
-
-    button.href =
-        ADDBUILDAGENCY_TELEGRAM_LINK;
-
-
-    button.addEventListener(
-        "click",
-        function(){
-
-            if(typeof fbq === "function"){
-
-                fbq(
-                    "track",
-                    "Lead"
-                );
-
-            }
-
-        }
-    );
-
-});
-
-
-/* =========================
-   ADBUILDAGENCY FOOTER
-========================= */
-
-document
-.querySelectorAll(".ads-telegram-link")
-.forEach(function(link){
-
-    link.href =
-        ADDBUILDAGENCY_TELEGRAM_LINK;
-
-
-    link.addEventListener(
-        "click",
-        function(){
-
-            if(typeof fbq === "function"){
-
-                fbq(
-                    "track",
-                    "Lead"
-                );
-
-            }
-
-        }
-    );
-
-});
-
-
-</script>
-
-
-<!-- ==================================================
-     META PIXEL
-================================================== -->
-
-<script>
-
-!function(f,b,e,v,n,t,s)
-{
-    if(f.fbq)return;
-
-    n=f.fbq=function(){
-
-        n.callMethod ?
-        n.callMethod.apply(n,arguments) :
-        n.queue.push(arguments)
-
-    };
-
-
-    if(!f._fbq)f._fbq=n;
-
-
-    n.push=n;
-
-    n.loaded=!0;
-
-    n.version='2.0';
-
-    n.queue=[];
-
-
-    t=b.createElement(e);
-
-    t.async=!0;
-
-    t.src=v;
-
-
-    s=b.getElementsByTagName(e)[0];
-
-    s.parentNode.insertBefore(t,s);
-
-}
-(
-    window,
-    document,
-    'script',
-    'https://connect.facebook.net/en_US/fbevents.js'
-);
-
-
-fbq(
-    'init',
-    '2309298496491206'
-);
-
-
-fbq(
-    'track',
-    'PageView'
-);
-
-</script>
-
-
-<!-- ==================================================
-     META PIXEL NOSCRIPT
-================================================== -->
-
-<noscript>
-
-<img
-    height="1"
-    width="1"
-    style="display:none"
-    src="https://www.facebook.com/tr?id=2309298496491206&ev=PageView&noscript=1"
-/>
-
-</noscript>
-
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -1144,8 +171,6 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2309298496491206&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-
 </body>
 </html>
 
